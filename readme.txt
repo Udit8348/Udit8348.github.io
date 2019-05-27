@@ -9,7 +9,7 @@ so It will always look great and crisp on any devices and screen sizes. It's bui
 and organized code which makes it very easy to customize.
 
 ==================================================================================================
-
+Website: https://colorlib.com/wp/template/philosophy/
 
 USING THE MAILCHIMP FORM:
 
