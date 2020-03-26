@@ -3,37 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Udit Subramanya</title>
+        <!-- /Users/imacudit/Documents/Sites/Udit8348.github.io/card.html -->
         <!-- STYLESHEETS -->
             <link rel="stylesheet" href="stylesheets/main.css">
-            <!-- pages/*.html -->
-            <!-- assets/*.png*.jpg -->
         <!-- FONTS -->
-            <!-- <link href="https://fonts.googleapis.com/css?family=Changa:200,400,700&display=swap" rel="stylesheet"> -->
             <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;700&family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&family=Neuton:ital,wght@0,200;0,300;0,400;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <script src="assets/scripts/responseHTML.js" type="text/javascript"></script>
         <h1 class="Changa">Udit Subramanya</h1>
-        <p class="Space_Mono">The Johnski should be right below this</p>
-        <!-- <div id="displayed"></div>
-        <form method="post" action="">
-            <input type="button" name="button" value="Load another page" onclick="loadWholePage('ee.html')" ;="">
-        </form> -->
-
-        <div id="include"></div>
-        <a id="link" href="#">Click Test Link</a>
+        <p class="Space_Mono">The Information should be right below this</p>
 
         <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $("#link").click(function(){
-                $("#include").load("ee.html");
-            });
-            $( document ).ready(function() {
-                console.log( "ready!" );
-            });
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
         </script>
+        <div id="EE" style="display: none;">Extended Essay</div>
+        <div id="EE_det" style="display: none;">I wrote a Physics Extended Essay as a part of the IB programme.</div>
+
+        <div id="VEX" style="display: none;">Vex Robotics Competition</div>
+        <div id="VEX_det" style="display: none;">I have done vex for 6 years.</div>
+
+        <div id="BB" style="display: none;">Combat Robotics</div>
+        <div id="BB_det" style="display: none;">Created a Combat fighting Robot that attacks other robots. Worked on the electronics.</div>
+
+        <script src="assets/scripts/contentController.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
