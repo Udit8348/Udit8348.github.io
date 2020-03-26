@@ -1,0 +1,25 @@
+.Changa{
+    font-family: 'Changa', sans-serif;
+    /* wght@200;400;700 */
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.Neuton{
+    font-family: 'Neuton', serif;
+    /* ital,wght@0,200;0,300;0,400;1,400 */
+    font-weight: 200;
+}
+
+.Space_Mono{
+    font-family: 'Space Mono', monospace;
+    /* ital,wght@0,400;0,700;1,400 */
+    font-weight: 400;
+
+}
+.IBM{
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* ital,wght@0,100;0,300;0,500;1,100;1,300;1,500 */
+    font-weight: 300;
+}
+/* Code formatting with github integration */
