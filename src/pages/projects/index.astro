@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const projects = (await getCollection('projects')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<BaseLayout title="Projects" description="Projects and technical work by Udit.">
+  <h1>Projects</h1>
+  <p class="lead">Sample entries for the initial portfolio. Project content is placeholder text.</p>
+  <ul class="project-list">
+    {projects.map(({ id, data }) => <li>
+      <article>
+        <time datetime={data.date.toISOString()}>{data.date.toISOString().slice(0, 10)}</time>
+        <h2><a href={`/projects/${id}/`}>{data.title}</a></h2>
+        <p>{data.summary}</p>
+        <ul class="technologies" aria-label="Technologies">{data.technologies.map(technology => <li>{technology}</li>)}</ul>
+      </article>
+    </li>)}
+  </ul>
+</BaseLayout>

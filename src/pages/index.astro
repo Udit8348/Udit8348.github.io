@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const documents = [
+  ['nsight-bitonic-sort.pdf', 'Nsight Bitonic Sort'],
+  ['oscar25-vortex-apptainer.pdf', 'OSCAR25 Vortex Apptainer'],
+  ['overthinking-reasoning-llm-dos.pdf', 'Overthinking Reasoning LLM DoS'],
+  ['pura23-bf16.pdf', 'PURA23 BF16'],
+];
+---
+<BaseLayout title="Home" description="Udit's personal website: technical work, projects, and documents.">
+  <section class="intro">
+    <p class="eyebrow">Personal website</p>
+    <h1>Hi, I'm Udit.</h1>
+    <p class="lead">A place for my technical work and projects.</p>
+    <a href="/projects/">Explore projects →</a>
+  </section>
+  <section aria-labelledby="documents-heading">
+    <h2 id="documents-heading">Documents</h2>
+    <ul class="document-list">
+      {documents.map(([filename, label]) => <li><a href={`/pdfs/${filename}`}>{label} <span class="file-type">PDF</span></a></li>)}
+    </ul>
+  </section>
+</BaseLayout>

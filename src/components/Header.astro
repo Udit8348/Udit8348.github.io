@@ -1,0 +1,10 @@
+---
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+  <a class="site-name" href="/">Udit</a>
+  <nav aria-label="Main navigation">
+    <a href="/" aria-current={path === '/' ? 'page' : undefined}>Home</a>
+    <a href="/projects/" aria-current={path.startsWith('/projects/') ? 'page' : undefined}>Projects</a>
+  </nav>
+</header>

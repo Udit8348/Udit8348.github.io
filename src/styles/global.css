@@ -1,0 +1,29 @@
+:root { color-scheme: light; --bg: #faf9f6; --text: #232b30; --muted: #59656d; --accent: #165b62; --border: #d5dcd9; --space: clamp(1.25rem, 4vw, 3rem); font-family: system-ui, sans-serif; line-height: 1.65; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.container { max-width: 58rem; padding-inline: var(--space); margin-inline: auto; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-block: 1.5rem; border-bottom: 1px solid var(--border); }
+.site-name { font-size: 1.3rem; font-weight: 700; text-decoration: none; color: var(--text); }
+nav { display: flex; gap: 1.25rem; }
+nav a[aria-current="page"] { font-weight: 700; }
+main { padding-block: var(--space); min-height: 65vh; overflow-wrap: anywhere; }
+h1, h2 { line-height: 1.2; letter-spacing: -.025em; }
+h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-block: 1rem; }
+h2 { font-size: 1.5rem; }
+.lead { font-size: 1.15rem; max-width: 42rem; color: var(--muted); }
+.intro { padding-block: 1rem 3rem; }
+.eyebrow, time, .file-type { color: var(--muted); font-size: .9rem; }
+.eyebrow { letter-spacing: .1em; text-transform: uppercase; }
+.document-list, .project-list { list-style: none; padding: 0; }
+.document-list > li, .project-list > li { border-top: 1px solid var(--border); padding-block: 1.25rem; }
+.file-type { display: inline-block; margin-left: .5rem; }
+.project-list h2 { margin-block: .4rem; }
+.technologies { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; margin-block: 1rem; }
+.technologies li { border: 1px solid var(--border); border-radius: .3rem; padding: .15rem .6rem; font-size: .85rem; }
+.prose { margin-top: 2.5rem; max-width: 65ch; }
+.site-footer { border-top: 1px solid var(--border); padding-block: 1.5rem; color: var(--muted); font-size: .9rem; }
+.skip-link { position: absolute; top: -5rem; left: 1rem; background: var(--bg); padding: .5rem; }
+.skip-link:focus { top: .5rem; }
