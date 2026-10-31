@@ -56,3 +56,9 @@ Keep this README synchronized with the repository.
 - Update the commands when dependencies, scripts, or development requirements change.
 
 Only document what exists in the repository.
+
+## Magic 8 Ball
+
+`/boo/` preserves the Magic 8 Ball page from Halloween commit `3a991441e1de06e41172eb495e35e23391da4742`. GitHub Pages redirects `/boo` to `/boo/`.
+
+Pushes to `master` build and deploy the static site with GitHub Actions. The existing GitHub Pages custom domain is `udit.sh`.
